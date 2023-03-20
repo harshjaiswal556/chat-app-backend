@@ -7,7 +7,7 @@ app.use(express.json());
 const cors = require("cors");
 dotenv.config();
 connectDb();
-
+app.use(cors());
 const chats = require("./data/data");
 const userRoutes = require("./routes/userRoutes");
 const chatRoutes = require("./routes/chatRoutes");
